@@ -77,10 +77,10 @@ plt.show()
 #What percentage of people over 60 has a heart disease?
 after_60 = hearts[hearts["Age"] > 60]
 disease_after_60 = after_60[after_60["HeartDisease"] == 1]
-procent = (len(disease_after_60)/ len(after_60)) * 100
-print(f"Osób po 60 {len(after_60)}")
-print(f"W tym chorych {len(disease_after_60)}")
-print(f"Co stanowi {procent} procent")
+percentage = (len(disease_after_60)/ len(after_60)) * 100
+print(f"People over 60 {len(after_60)}")
+print(f"People over 60 who have disease {len(disease_after_60)}")
+print(f"Which is  {percentage} %")
 Man = hearts[hearts["Sex"] == "M"]
 Man_Heart_Disease = Man[Man["HeartDisease"] == 1]
 Woman = hearts[hearts["Sex"] == "F"]
